@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanshu Deshmukh's Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>P D</h1>
+        </div>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/priyanshu-deshmukh-161145275/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24"></a>
+            <a href="https://x.com/PriyanshuDesh13" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="24"></a>
+            <a href="https://github.com/priyanshu-deshmukh" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" width="24"></a>
+            <a href="mailto:priyanshudeshmukh2022@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" width="24"></a>
+        </div>
+    </div>
+    <div class="content">
+        <span class="menu-btn" onclick="toggleMenu()">&#9776;</span>
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="image-container">
+                <img src="1709062916625.jpeg" alt="Priyanshu Deshmukh">
+            </div>
+            <p>Hi, I am Priyanshu Deshmukh, a third year Btech student at Symbiosis Institute of Technology, Nagpur. I am currently pursuing Computer Science and Engineering. I have a keen interest in playing PC games, cooking, and coding. I was part of a team that won third place in two different hackathons.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>E-commerce bottle store webpage</li>
+                <li>Landing pages for two school</li>
+                <li>Landing pages for a local business</li>
+                <li>A wenpage for an organization</li>
+                <li>Resume webpage</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:priyanshudeshmukh2022@gmail.com" style="color: #ffa726;">priyanshudeshmukh2022@gmail.com</a></p>
+            <p>Phone: 9975661769</p>
+        </section>
+    </div>
+    <script>
+        function toggleMenu() {
+            var sidebar = document.querySelector('.sidebar');
+            var content = document.querySelector('.content');
+            if (sidebar.style.width === '60px') {
+                sidebar.style.width = '250px';
+                content.style.marginLeft = '250px';
+            } else {
+                sidebar.style.width = '60px';
+                content.style.marginLeft = '60px';
+            }
+        }
+    </script>
+</body>
+</html>
